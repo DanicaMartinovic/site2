@@ -1,0 +1,94 @@
+{% extends 'dostava/base.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+<div class="contact-before">
+    
+<div class="row">
+    <h3>Kontakt</h3>
+
+</div>
+</div>
+</div>
+<div class="container">
+<div class="contact-section">
+    
+    <h2>Kontaktirajte nas</h2>
+
+<div class="container contact-container">
+    <div class="row">
+        <div class="col-md-5">
+            
+            <div class="contact-details">
+            <h4>Mobilni kontakt</h4>
+            <p>066/262-202</p>
+            <p>062/262-242</p>
+            <p>063/8759-611</p>
+
+            <h4>Email kontakt</h4>
+            <p> <a href="danicas033@gmail.com">zmajdostava@gmail.com</a></p>
+
+            <h4>Društvene mreže</h4>
+            <p> <a href="#"><i class="fa-brands fa-square-instagram fa-lg" style="color: #57595c;"></i></i>&nbsp;Instagram</a></p>
+        </div>  
+        </div>
+        <div class="col-md-7">
+     <form id="my-form" action = "https://formspree.io/f/xoqzyrko" method="POST">
+        <div class="row">
+            <div class="col-md-12">
+              
+                <textarea id="message" name="message" placeholder="PORUKA*" required="Popuniti polje"></textarea>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                
+                <input id="name" name="name" type="text" placeholder="IME*" required="Popuniti polje">
+            </div>
+            <div class="col-md-6">
+                <input id="email" name="email" type="text" placeholder="EMAIL*" required="Popuniti polje">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <input id="contact" type="text" placeholder="TELEFON">
+            </div>
+            <div class="col-md-6">
+               <button type="submit">Pošaljite poruku</button>
+            </div>
+        </div>
+        <p id="my-form-status"></p>
+     </form>
+    
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="location-section">
+    <div class="row">
+        
+        <div class="col-md-6">
+            <div class="responsive">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89850.58713642095!2d19.779401278521018!3d45.27142999637024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10613de93455%3A0xb6f7d683724fe28!2sNovi%20Sad!5e0!3m2!1sen!2srs!4v1680728247946!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="rec1-section">
+                <h2>Gde se nalazimo</h2>
+                <h3><i class="fa-solid fa-location-dot fa-beat" style="color: #ee4217;"></i> Novi Sad</h3>
+                
+                <h3> <i class="fa-regular fa-clock" style="color: #f50f0f;"></i> Svaki radni dan od 8.00 do 24.00 časa</h3>
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+</div>
+{% endblock  %}
